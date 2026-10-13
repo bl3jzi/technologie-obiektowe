@@ -26,8 +26,8 @@ public class Grade {
         };
 
         try {
-            QueryExecutor.createAndObtainId(gradeStudentSql, args);
-            return true;
+            int generatedId = QueryExecutor.createAndObtainId(gradeStudentSql, args);
+            return generatedId > 0;
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
