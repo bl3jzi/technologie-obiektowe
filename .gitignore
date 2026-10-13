@@ -6,7 +6,14 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-.gradle/
-build/
-.idea/
-*.lock
+
+# Katalogi budowania i pamięć podręczna Gradle
+active-record/.gradle/
+active-record/build/
+
+# Bazy danych SQLite
+active-record/*.db
+
+# Konfiguracja IntelliJ
+active-record/.idea/
+active-record/*.iml
